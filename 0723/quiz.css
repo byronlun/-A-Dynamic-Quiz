@@ -1,0 +1,31 @@
+body {
+	
+}
+h1 {
+	font-family: '微软雅黑', '宋体';
+	font-weight: bold;
+	text-align: center;
+}
+p {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+div {
+	margin-bottom: 40px;
+}
+button {
+	width: 70px;
+	height: 30px;
+	font-size: 1.1em;
+	background-color: #2CE6EC;
+}
+#main {
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ADEFF0;
+	border: 2px solid black;
+	border-radius: 10px;
+}
