@@ -35,12 +35,10 @@ $(document).ready(function() {
 	//start function
 	$('#start').click(function() {
 		j = 0;
-		$('#content').hide(1200,$('#content').remove());
-		/*$('#content').remove();*/
-		
+		$('#content').remove();
 		changeQ();
 		$('#content').hide();
-		$('#content').fadeIn(1200);
+		$('#content').fadeIn(800);
 		$('#start').attr('id', 'start1');
 		$('#next').attr('id', 'next1');
 		$('#back').attr('id', 'back1');
@@ -66,11 +64,14 @@ $(document).ready(function() {
 			if (j == allQuestions.length-1) {
 				$('#next1').text('finish');
 			}
-			$('#content').hide(2000,$('#content').remove());
+			$('#content').fadeOut(800, function() {
+				$('#content').remove();
+				changeQ();			
+				$('#content').hide();
+				$('#content').fadeIn(800);
+			});
 			/*$('#content').remove();*/
-			changeQ();
-			$('#content').hide();
-			$('#content').fadeIn(1200);
+
 		} else {
 			//submit and show score function
 			count = countScore(array);
@@ -86,13 +87,15 @@ $(document).ready(function() {
 	//back function
 	$('#back').click(function() {
 		if (j > 0) {
-			$('#content').remove();
-			array[j] = NaN;
-			j--;
-			array[j] = NaN;
-			changeQ();
-			$('#content').hide();
-			$('#content').fadeIn(1200);
+			$('#content').fadeOut(800, function() {
+				$('#content').remove();
+				array[j] = NaN;
+				j--;
+				array[j] = NaN;
+				changeQ();
+				$('#content').hide();
+				$('#content').fadeIn(800);
+			});
 		}
 	});
 	//change function
