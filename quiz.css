@@ -1,0 +1,83 @@
+body {
+	font-family: '微软雅黑', '宋体';
+}
+h1 {
+	font-weight: bold;
+	text-align: center;
+}
+p {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	text-align: center;
+}
+img {
+	width: 300px;
+	height: 200px;
+	margin-left: 100px;
+}
+button {
+	width: 80px;
+	height: 40px;
+	font-size: 1.1em;
+	background-color: #2CE6EC;
+}
+#control {
+	right: 1px;
+	bottom: 1px;
+}
+#back {
+	display: none;
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+#start {
+	position: absolute;
+	margin-left: 210px;
+	bottom: 50px;
+}
+#start1 {
+	display: none;
+	position: absolute;
+	margin-left: 210px;
+	bottom: 50px;
+}
+#back1 {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+#next {
+	display: none;
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+#next1 {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+#main {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ADEFF0;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+.highlight {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 150px;
+	/* 这里可以设置分数段显示的颜色不一样 */
+	color: red;
+}
+.hide {
+	display: none;
+}
