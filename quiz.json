@@ -1,0 +1,25 @@
+[{
+	"querstion": "你觉得下面哪个人最帅？",
+	"choices": [
+		"炳伦",
+		"育帆",
+		"曹操"
+	],
+	"correctAnswer": "0"
+}, {
+	"querstion": "你觉得下面哪个人最帅？",
+	"choices": [
+		"炳伦",
+		"育帆",
+		"曹操"
+	],
+	"correctAnswer": "0"
+}, {
+	"querstion": "What is JavaScript?",
+	"choices": [
+		"A Programming Language",
+		"A Food",
+		"I Dont Know"
+	],
+	"correctAnswer": "0"
+}]

@@ -38,7 +38,7 @@ $(document).ready(function() {
 		$('#content').remove();
 		changeQ();
 		$('#content').hide();
-		$('#content').fadeIn(800);
+		$('#content').fadeIn(500);
 		$('#start').attr('id', 'start1');
 		$('#next').attr('id', 'next1');
 		$('#back').attr('id', 'back1');
@@ -64,11 +64,11 @@ $(document).ready(function() {
 			if (j == allQuestions.length-1) {
 				$('#next1').text('finish');
 			}
-			$('#content').fadeOut(800, function() {
+			$('#content').fadeOut(500, function() {
 				$('#content').remove();
 				changeQ();			
 				$('#content').hide();
-				$('#content').fadeIn(800);
+				$('#content').fadeIn(500);
 			});
 			/*$('#content').remove();*/
 
@@ -76,7 +76,7 @@ $(document).ready(function() {
 			//submit and show score function
 			count = countScore(array);
 			$('#content').remove();
-			$('#main').prepend('<div id="content"><p class="highlight">你的总分是：' + count + '</p></div>');
+			$('h1').after('<div id="content"><p class="highlight">你的总分是：' + count + '</p></div>');
 			$('#start1').attr('id', 'start');
 			$('#start').text('restart');
 			$('#next1').attr('id', 'next');
@@ -87,20 +87,23 @@ $(document).ready(function() {
 	//back function
 	$('#back').click(function() {
 		if (j > 0) {
-			$('#content').fadeOut(800, function() {
+			if (j < allQuestions.length) {
+				$('#next1').text('next');
+			}
+			$('#content').fadeOut(500, function() {
 				$('#content').remove();
 				array[j] = NaN;
 				j--;
 				array[j] = NaN;
 				changeQ();
 				$('#content').hide();
-				$('#content').fadeIn(800);
+				$('#content').fadeIn(500);
 			});
 		}
 	});
 	//change function
 	function changeQ() {
-		$('#main').prepend('<div id="content"><p>' + (j+1) + "、" + allQuestions[j].querstion + '</p><br></div>');
+		$('h1').after('<div id="content"><p>' + (j+1) + "、" + allQuestions[j].querstion + '</p><br></div>');
 		for (var i = 0; i < allQuestions[j].choices.length; i++) {
 			$('#content').append('<input type="radio" id="' + i + '" name="choices" value="' + i + '">' + '<label for="' + i + '">' + allQuestions[j].choices[i] + '<br>');
 		};

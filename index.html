@@ -4,24 +4,75 @@
 	<meta charset="UTF-8">
 	<title>A-Dynamic-Quiz</title>
 	<link rel="stylesheet" type="text/css" href="quiz.css">
-	<!-- <script src="quizByJavaScript.js"></script> -->
-	<script src="jquery.js"></script>
-	<script src="quizByjquery.js"></script>
-</head>
+	<script src="quizByJavaScript.js"></script>
+<!-- 	<script src="jquery.js"></script>
+	 -->	<!-- <script src="quizByjquery.js"></script>
+	</head> -->
 <body>
-	<h1>关于大学生情商的调查问卷</h1>
-	<div id="main">
+	<!-- 登录界面 -->
+	<div id="dljm" class="main">
+		<div class="item">
+			<input type="button" class="button" id="login" name="login" value="LOGIN">
+			<input type="button" class="button" id="signup" name="signup" value="SIGN UP">
+		</div>
+		<div class="item">
+			<input type="text" class="text" id="username" name="username" placeholder="username">
+		</div>
+		<div class="item">
+			<input type="password" class="text" id="password" name="password" placeholder="password">
+		</div>
+		<!-- <div class="item" id="remember">
+			<input type="checkbox" name="remember" value="remember me">remember me
+		</div> -->
+		<div class="item" id="loginDiv">
+			<input type="submit" class="submit" id="LOGIN" name="login" value="LOGIN">
+		</div>
+		<div class="item hide" id="sure">
+			<input type="submit" class="submit" id="SURE" name="login" value="SURE">
+		</div>
+	</div>
+	<div id="Menu" class="main hide">
+		<div id="logout"><span><button>logout</button></span></div>
+		<div id="menuTitle">
+			<h1>请从以下类型中选择一个进行测试</h1>
+		</div>
+		<div id="IT" class="choice left">
+			<h2>IT知识测试</h2>
+		</div>
+		<div id="life" class="choice right" >
+			<h2>生活常识测试</h2>
+		</div>
+		<div id="singleDog" class="choice left">
+			<h2>单身狗测试</h2>
+		</div>
+		<div id="byronlun" class="choice right">
+			<h2>渣伦熟悉度测试</h2>
+		</div>
+	</div>
+	<div id="quiz" class="main1 hide">
+		<h1>关于大学生情商的调查问卷</h1>
 		<div id="content">
 			<h2>想知道你的情商指数么？</h2>
 			<h2>点击start键开始你的情商测试</h2>
-			<!-- <img src="EQ.png"> -->
 		</div>
 		<div id="control">
 			<button id="start">start</button>
 			<button id="back">back</button>
 			<button id="next">next</button>
+			<button id="menu">menu</button>
+			<button id="Logout">logout</button>
 		</div>
 	</div>
+	<div id="again" class="main hide">
+		<div id="bye">
+			<p>感谢你的到来</p>
+			<p>欢迎再次来访</p>
+		</div>
+		<div id="reLogin">
+			<button>重新登录</button>
+		</div>
+	</div>
+	
 </body>
 
 </html>
