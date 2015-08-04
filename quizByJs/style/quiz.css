@@ -1,0 +1,171 @@
+body {
+	font-family: '微软雅黑', '宋体';
+}
+h1 {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+h2 {
+	text-align: center;
+}
+p {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+img {
+	width: 300px;
+	height: 200px;
+	margin-left: 100px;
+}
+button {
+	width: 80px;
+	height: 40px;
+	font-size: 1.1em;
+	background-color: #2CE6EC;
+}
+.main {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #ADEFF0;
+	border: 2px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
+.main1 {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #ADEFF0;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+.item {
+	margin-bottom: 10px;
+}
+.button
+{
+    font-size: 1.2em;
+
+    width: 100px;
+    height: 40px;
+    margin-top: 80px;
+
+    border: 1px solid #aca0a0;
+    background-color: #6fef81;
+}
+#logout {
+	position: absolute;
+	display: inline-block;
+	right: 20px;
+}
+#logout button{
+	width: 60px;
+	height: 30px;
+	border: 0px;
+}
+#bye {
+	margin-top: 80px;
+	margin-bottom: 60px;
+	font-size: 1.6em;
+}
+#reLogin button {
+	border: 0px;
+	width: 100px;
+	height: 50px;
+}
+#menuTitle {
+	margin-top: 35px;
+}
+.text {
+	width: 202px;
+	height: 30px;
+	font-size: 1.2em;	
+	font-family: serif;
+	background-color: white;
+	border: 1px solid #ACA0A0;
+}
+.error {
+	color: red;
+}
+.submit {
+	width: 202px;
+	height: 40px;
+	font-size: 1.2em;
+	background-color: red;
+	border: 1px solid #ACA0A0;
+	color: white;
+}
+.choice { 
+	width: 200px;
+	height: 120px;
+	background-color: #6fef81;
+	border: 1px dashed black;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.choice h2 {
+	padding-top: 20px;
+}
+.left {
+	float: left;
+	margin-left: 25px;
+}
+.right {
+	margin-left: 270px;
+}
+#control {
+	right: 1px;
+	bottom: 1px;
+}
+#start {
+	position: absolute;
+	left: 220px;
+	bottom: 50px;
+}
+#start1 {
+	display: none;
+	position: absolute;
+	left: 220px;
+	bottom: 50px;
+}
+#back, #menu{
+	display: none;
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+#back1, #menu1 {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+#next, #Logout {
+	display: none;
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+#next1, #Logout1 {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+.highlight {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 150px;
+	/* 这里可以设置分数段显示的颜色不一样 */
+	color: red;
+}
+.hide {
+	display: none;
+}
